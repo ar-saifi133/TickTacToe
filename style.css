@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-color: pink;
+    background-color: #003049;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,28 +29,36 @@ padding: 17px ;
     width: 22.5vh;   
     margin: 0.16vh ;
     border-radius: 10px; 
-    background-color: aliceblue;
+    background-color: #669bbc;
     font-size: 50px;
     margin: 2.5px;
+    color: #fdf0d5;
+    border: none
+}
+.box:hover{
+    border: 1px solid  white;
 }
 .reset{
     margin: 10px;
     height: 5vh;
     width: 10 vh;
     padding: 2px;
-    background-color: gray;
-    border: 0.5px solid white;
+    background-color: #669bbc;
+    border: none;
     border-radius: 5px;
-    color: rgb(230, 224, 224);
+    color: #fdf0d5;
+}
+.reset:hover{
+    border: 1px solid  white;
 }
 .winner{
-    color: aliceblue;
+    color: #fdf0d5;
     font-size: 50px;
     display: flex;
     flex-wrap: wrap ;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid #fdf0d5;
     width: 500px;
 }
 .new{
@@ -58,11 +66,15 @@ padding: 17px ;
     height: 40px;
     width: 120px ;
     padding: 2px;
-    background-color: gray;
-    border: 0.5px solid white;
+    background-color: #669bbc;
+    border: 0.5px solid #fdf0d5;
     border-radius: 5px;
-    color: rgb(230, 224, 224);
+    color: #fdf0d5;
     font-size: 20px;
+}
+.new:hover{
+    color: #003049 ;
+    border: 0.5px solid #003049;
 }
 
 .hidden{
