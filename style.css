@@ -1,51 +1,71 @@
 *{
     margin: 0px;
     padding: 0px;
-
+    
+    box-sizing: border-box;
     
 }
 body{
     height: 100vh;
     width: 100vw;
     background-color: #003049;
+    overflow: hidden;
+    padding: 10px;
+    
 }
 header{
-    padding: 10px;
+    padding: 10px 0 0 0;
     font-size:25px;
     display:flex;
     align-items: center;
     justify-content: center;
     color: #fdf0d5;
+   
+    height: 10vh;
 }
 
 #body{
-    
-    height: 80vh;
-    width: 100vw;
+    height: 90vh;
+    width: 100vw;   
     background-color: #003049;
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
+main{
+    height: inherit;
+    padding: 2vh 2vw;
+}
+
 #game{
     
 height: 70vh;
-width: 70vh;
+width: 45vw;
 
 border-radius: 20px;
 display: flex;
 flex-wrap: wrap;
+overflow: hidden ;
 padding: 17px ;
 }
+.reset-box{
+    padding: 17px ;
+    height: 20vh;
+}
 .box{
-    height: 23vh;
-    width: 22.5vh;   
-    margin: 0.16vh ;
+    height: 21vh;
+    width: 13vw;  
+    max-width: 153.276;
+    max-height: 133.85px; 
+    min-width: 97px;
+    min-height: 115.15;
+    position: relative;
     border-radius: 10px; 
     background-color: #669bbc;
     font-size: 50px;
-    margin: 2.5px;
+    margin: 1.5px;
     color: #fdf0d5;
     border: none
 }
@@ -53,9 +73,9 @@ padding: 17px ;
     border: 1px solid  white;
 }
 .reset{
-    margin: 10px;
+
     height: 5vh;
-    width: 10 vh;
+    width: 10vw;
     padding: 2px;
     background-color: #669bbc;
     border: none;
@@ -73,7 +93,8 @@ padding: 17px ;
     align-items: center;
     justify-content: center;
     border: 1px solid #fdf0d5;
-    width: 500px;
+    width: 60vw;
+    padding: 10px;
 }
 .new{
     margin: 10px;
@@ -93,4 +114,44 @@ padding: 17px ;
 
 .hidden{
     display: none;
+}
+@media screen and (max-width: 750px) {
+    #game{
+    height: 55vh;
+width: 55vw;
+    }
+}
+@media screen and (max-width: 610px) {
+    #game{
+    height: 55vh;
+width: 70vw;
+    }
+    .box{
+    height: 21vh;
+    width: 13vw;  }
+
+}
+@media screen and (max-width: 490px) {
+    #game{
+    height: 55vh;
+width: 85vw;
+    }
+    .box{
+    height: 21vh;
+    width: 13vw; 
+    max-width: 153.276;
+    max-height: 155px;   }
+    
+}
+@media screen and (max-width: 400px) {
+    #game{
+    height: 55vh;
+width: 95vw;
+    }
+    .box{
+    height: 21vh;
+    width: 13vw; 
+    max-width: 153.276;
+    max-height: 133.85px;  }
+    
 }
